@@ -27,7 +27,7 @@ class MovieCatalogBloc implements BlocBase {
   ///
   /// Release date max
   /// 
-  int _maxReleaseDate = 2005;
+  int _maxReleaseDate = 2019;
 
   ///
   /// Total number of movies in the catalog
@@ -69,7 +69,7 @@ class MovieCatalogBloc implements BlocBase {
   /// has been applied to the filters and total of movies, fetched so far
   ///
   BehaviorSubject<int> _totalMoviesController = BehaviorSubject<int>(seedValue: 0);
-  BehaviorSubject<List<int>> _releaseDatesController = BehaviorSubject<List<int>>(seedValue: <int>[2000,2005]);
+  BehaviorSubject<List<int>> _releaseDatesController = BehaviorSubject<List<int>>(seedValue: <int>[2000,2019]);
   BehaviorSubject<int> _genreController = BehaviorSubject<int>(seedValue: 28);
   Sink<int> get _inTotalMovies => _totalMoviesController.sink;
   Stream<int> get outTotalMovies => _totalMoviesController.stream;
@@ -81,7 +81,7 @@ class MovieCatalogBloc implements BlocBase {
   ///
   /// We also want to handle changes to the filters
   ///
-  BehaviorSubject<MovieFilters> _filtersController = BehaviorSubject<MovieFilters>(seedValue: MovieFilters(genre: 28, minReleaseDate: 2000, maxReleaseDate: 2005));
+  BehaviorSubject<MovieFilters> _filtersController = BehaviorSubject<MovieFilters>(seedValue: MovieFilters(genre: 28, minReleaseDate: 2000, maxReleaseDate: 2019));
   Sink<MovieFilters> get inFilters => _filtersController.sink;
   Stream<MovieFilters> get outFilters => _filtersController.stream;
 

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/movies.iml" filepath="$PROJECT_DIR$/movies.iml" />
-      <module fileurl="file://$PROJECT_DIR$/movies_android.iml" filepath="$PROJECT_DIR$/movies_android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/movies_streams.iml" filepath="$PROJECT_DIR$/.idea/movies_streams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Streams-Block-Reactive-Programming-in-Flutter.iml" filepath="$PROJECT_DIR$/Streams-Block-Reactive-Programming-in-Flutter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/app/src/main/main.iml" filepath="$PROJECT_DIR$/android/app/src/main/main.iml" />
     </modules>
   </component>
 </project>

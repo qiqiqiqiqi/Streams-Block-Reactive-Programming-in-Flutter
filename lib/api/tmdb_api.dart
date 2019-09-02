@@ -12,7 +12,7 @@ import 'package:movies_streams/models/movie_page_result.dart';
 /// 
 
 class TmdbApi {
-  static const String TMDB_API_KEY = "PUT YOUR KEY, HERE";
+  static const String TMDB_API_KEY = "2f412f904cb6c26038fc7e3c7c113e37";
   static const String baseUrl = 'api.themoviedb.org';
   final String imageBaseUrl = 'http://image.tmdb.org/t/p/w185/';
   final _httpClient = new HttpClient();
@@ -30,14 +30,14 @@ class TmdbApi {
       '3/discover/$type',
       <String, String>{
         'api_key': TMDB_API_KEY,
-        'language': 'en-US',
+       /* 'language': 'en-US',*/
         'sort_by': 'popularity.desc',
-        'include_adult': 'false',
+        /*'include_adult': 'false',
         'include_video': 'false',
         'page': '$pageIndex',
         'release_date.gte': '$minYear',
         'release_date.lte': '$maxYear',
-        'with_genres': '$genre',
+        'with_genres': '$genre',*/
       },
     );
 

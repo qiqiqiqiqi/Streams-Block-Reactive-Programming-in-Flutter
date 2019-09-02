@@ -110,6 +110,7 @@ class MovieCardWidgetState extends State<MovieCardWidget> {
           stream: _bloc.outIsFavorite,
           initialData: false,
           builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
+            print('MovieCardWidget--build():${snapshot.data}');
             if (snapshot.data == true) {
               return Positioned(
                 top: 0.0,
